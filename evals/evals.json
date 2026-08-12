@@ -1,0 +1,45 @@
+{
+  "skill_name": "product-thesis",
+  "evals": [
+    {
+      "id": "legal-tech-evidence-flow",
+      "prompt": "使用 product-thesis 的 Fast Mode：我想做一个 AI 工具，自动帮租赁纠纷当事人写起诉材料并推荐证据。",
+      "expected_output": "先整理用户事实、判断与待验证假设；研究并引用近/中/远案例；给出包含证据账本、类比失效条件和研究路线的可修正 Thesis Workspace。",
+      "files": [],
+      "assertions": [
+        "不以连续逐关提问取代首次完整输入后的研究。",
+        "Near、Medium、Far 案例均附可核查来源，或明确标记为 Unverified lead。",
+        "Far Transfer 写明目标结构与来源结构的对应关系。",
+        "至少写出一项法律场景特有的类比失效条件。",
+        "最终工作台包含可证伪的 Cheapest Experiment。",
+        "若结论为 PARK，最终卡片给出 2–3 条降低不确定性的 Next Path，并说明判断会如何变化。"
+      ]
+    },
+    {
+      "id": "lifestyle-wardrobe-choice",
+      "prompt": "使用 product-thesis 的 Fast Mode：我想做一个 AI 衣橱搭配 App，帮上班族每天更快选衣服。",
+      "expected_output": "从穿搭功能抽象到决策负担和闲置资产利用；研究有来源的表面不同领域；不因新颖而默认 YES，并提供可继续推进的研究路线。",
+      "files": [],
+      "assertions": [
+        "L3 不依赖时尚或穿搭行业术语。",
+        "Far Transfer 的表面领域与时尚不同。",
+        "Stress Test 说明身份表达或场景差异等关键不映射变量。",
+        "Build 判断有清晰理由。",
+        "最终工作台列出尚未解决的问题与 verdict 之后的 Next Research Route，而非停在结论。"
+      ]
+    },
+    {
+      "id": "ai-knowledge-traceability",
+      "prompt": "使用 product-thesis 的 Fast Mode：我想做一个 AI 第二大脑，自动总结公司所有文档，让团队不再找不到知识。",
+      "expected_output": "区分知识摘要与可验证、可追溯的团队协作问题；研究并引用机制案例而非输出功能清单；用最小实验验证高风险假设。",
+      "files": [],
+      "assertions": [
+        "区分已知事实、推断和待验证假设。",
+        "至少比较 Near、Medium、Far 三种迁移。",
+        "Transferred Mechanism 不是“使用 AI 总结”这类技术或功能描述。",
+        "Cheapest Experiment 有明确通过/失败信号，并能改变立论判断。",
+        "最终卡片说明实验结果将如何改变 YES / PARK / NO 判断。"
+      ]
+    }
+  ]
+}
