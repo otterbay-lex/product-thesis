@@ -79,7 +79,9 @@ Use only when the user asks for a rapid desk-research pass. Complete the same an
 
 ## Research workflow
 
-Read `references/structure-library.md` before structural analysis, `references/transfer-patterns.md` before case search, and `references/scoring-rubric.md` before judging transfers. When an existing product is a study source, also read `references/lawful-translation-boundaries.md` before collecting or using evidence. Use `assets/product-thesis-template.md` verbatim for the final workspace.
+Read `references/structure-library.md` before structural analysis, `references/transfer-patterns.md` before case search, and `references/scoring-rubric.md` before judging transfers. When an existing product is a study source, read both `references/lawful-translation-boundaries.md` and `references/product-study-method.md` before collecting or using evidence. Use `assets/product-thesis-template.md` verbatim for the final workspace.
+
+The user may begin with a target problem, a source product, or both. If only a source product is supplied, complete the product study before asking where to translate it; do not invent a target context. If only a target problem is supplied, clarify its structure before selecting source products. When both are supplied, investigate the source on its own terms before testing the proposed transfer.
 
 ### 1. Intake and evidence ledger
 
@@ -91,7 +93,26 @@ Quietly apply the old Gates 1–3:
 
 Present these in a compact **Evidence Ledger** with four columns: `User-supplied fact`, `User judgment`, `External evidence`, and `Assumption to verify`. If the user supplied too little, proceed with clearly labelled assumptions rather than asking a long chain of questions.
 
-### 2. Source-grounded cross-domain research
+### 2. Source Product Dossier — when studying an existing product
+
+Use the six lenses in `references/product-study-method.md`:
+
+1. user and context;
+2. value proposition;
+3. key mechanism;
+4. business model and incentives;
+5. growth and retention;
+6. constraints and failure boundary.
+
+For each lens, cite a public source or label the statement `Inference`; keep unresolved claims as `Unverified lead`. Separate **Surface features** from the **Underlying mechanism**, then show the mechanism causally:
+
+`starting structure → intervention → changed behaviour or system state → outcome`
+
+Do not let one admired source product become the answer by default. Test at least one competing explanation—for example brand, distribution, timing, capital, regulation, or a different mechanism—when it could plausibly explain the observed result.
+
+If a target context is known, create the **Target-Context Translation Map** from the reference. Map actors, triggers, information, trust, incentives, payer, workflow, regulation, feedback, and time to value. A transfer advances only when the critical non-mapping variable and its consequence are explicit.
+
+### 3. Source-grounded cross-domain research
 
 Research one candidate each for Near, Medium, and Far Transfer:
 
@@ -110,7 +131,7 @@ If web access is unavailable, say so plainly. You may offer a tentative, memory-
 
 Reject cases that are merely similar products, lack a source, or have no causal structural mapping. Do not force a Far Transfer when none survives this standard.
 
-### 3. Mechanism and transfer stress test
+### 4. Mechanism and transfer stress test
 
 For the one or two strongest sourced cases, show the causal change:
 
@@ -124,7 +145,7 @@ Then score Structural Fit and Transfer Distance using the rubric. Explain:
 - the first failure condition;
 - the observation or result that would falsify the transfer.
 
-### 4. Provisional thesis and research routes
+### 5. Provisional thesis and research routes
 
 Complete one **Product Thesis Workspace**, not merely a verdict. The thesis must name the selected Transfer Map and explain why the borrowed mechanism may survive its critical difference.
 
@@ -147,7 +168,7 @@ In Research Mode and Training Mode, ask the user which route to pursue next afte
 Unless the user requests otherwise, present the research as three readable parts:
 
 1. **把问题讲清楚 / Clarifying the problem** — evidence ledger, abstractions, structural fingerprint.
-2. **我去找结构相似但行业不同的机制 / Researching mechanisms across domains** — sourced Near, Medium, Far Transfer Maps and stress tests.
+2. **我去研究产品与跨行业机制 / Studying products and mechanisms across domains** — when relevant, the Source Product Dossier; then sourced Near, Medium, Far Transfer Maps and stress tests.
 3. **我们一起决定这个立论是否值得继续 / Deciding whether the thesis should continue** — the completed Product Thesis Workspace and next research routes.
 
 Keep the prose concise, but never hide evidence gaps. Do not end at `YES`, `PARK`, or `NO` alone.
