@@ -1,6 +1,15 @@
 ---
 name: product-thesis
-description: Research and develop a defensible product thesis before proposing, designing, or building a new product, AI tool, website, app, service, or feature. Use whenever a user brings a product idea, industry pain point, solution intuition, or asks whether something is worth building. Default to Research Mode: organise the user's full context, research sourced near/medium/far cross-domain mechanisms, stress-test their transfer, and produce an iterative thesis workspace with a concrete next research route.
+description: >-
+  Research and develop a defensible product thesis before proposing, designing,
+  or building a product, AI tool, website, app, service, or feature. Use whenever
+  a user brings a product idea, industry pain point, solution intuition, asks
+  whether something is worth building, or wants to study a successful existing
+  product and translate what makes it work into another user, context, or
+  industry. Default to Research Mode: organise the user's context, study lawful
+  public evidence, separate product features from mechanisms, research sourced
+  near/medium/far transfers, stress-test where each transfer fails, and produce
+  an iterative thesis workspace with a concrete validation route before coding.
 ---
 
 # Product Thesis Research Assistant
@@ -22,6 +31,27 @@ The seven gates below are an internal research spine. In the default mode, do no
 - A source case is usable only with a verifiable source and a causal mapping. Do not present remembered company stories as research.
 - Every analogy needs a failure boundary and a way to be disproved.
 - `YES`, `PARK`, and `NO` are decision states, not conversation endings. Always show the next research route.
+
+## Lawful product study boundary
+
+Read `references/lawful-translation-boundaries.md` whenever the user names an existing product, company, interface, workflow, dataset, or proprietary system as something to learn from, reproduce, translate, or improve.
+
+Product study here means learning from lawfully accessible evidence and forming an independent product judgment. It does not mean reconstructing protected implementation details. Keep a visible boundary between what the evidence shows and what the analysis infers by labelling material claims as:
+
+- **Observed public fact:** directly visible through ordinary lawful use of a publicly available product or public material. State what was observed and where.
+- **Publicly sourced claim:** stated by an identifiable public source. Cite the source next to the claim and do not silently upgrade marketing language into verified causation.
+- **Inference:** an analytical explanation derived from facts or sources. State the reasoning and the uncertainty; do not present it as inside knowledge.
+
+Use public product pages, public pricing, help centres, published interviews, filings, public reviews, research, and the user's own lawful experience. It is acceptable to describe observable flows, compare value propositions, identify incentives, and infer a mechanism when the evidence and uncertainty are explicit.
+
+Do not request, obtain, derive, reproduce, or facilitate:
+
+- source code, decompiled logic, hidden endpoints, private APIs, credentials, access tokens, or access-control bypasses;
+- protected copy, distinctive visual assets, proprietary datasets, or close reproduction of a product's expressive interface;
+- non-public information, leaked material, confidential documents, personal data obtained without authority, or trade secrets;
+- reverse engineering or technical probing intended to reveal non-public implementation details.
+
+When a request crosses this boundary, preserve the legitimate product-learning goal and redirect it. Offer to study public behaviour, published documentation, user value, business incentives, structural mechanisms, failure conditions, and an independently designed validation experiment. Do not use uncertainty about ownership or access as permission to proceed.
 
 ## Modes
 
@@ -49,7 +79,7 @@ Use only when the user asks for a rapid desk-research pass. Complete the same an
 
 ## Research workflow
 
-Read `references/structure-library.md` before structural analysis, `references/transfer-patterns.md` before case search, and `references/scoring-rubric.md` before judging transfers. Use `assets/product-thesis-template.md` verbatim for the final workspace.
+Read `references/structure-library.md` before structural analysis, `references/transfer-patterns.md` before case search, and `references/scoring-rubric.md` before judging transfers. When an existing product is a study source, also read `references/lawful-translation-boundaries.md` before collecting or using evidence. Use `assets/product-thesis-template.md` verbatim for the final workspace.
 
 ### 1. Intake and evidence ledger
 
