@@ -1,15 +1,13 @@
 ---
 name: product-thesis
 description: >-
-  Research and develop a defensible product thesis before proposing, designing,
-  or building a product, AI tool, website, app, service, or feature. Use whenever
-  a user brings a product idea, industry pain point, solution intuition, asks
-  whether something is worth building, or wants to study a successful existing
-  product and translate what makes it work into another user, context, or
-  industry. Default to Research Mode: organise the user's context, study lawful
-  public evidence, separate product features from mechanisms, research sourced
-  near/medium/far transfers, stress-test where each transfer fails, and produce
-  an iterative thesis workspace with a concrete validation route before coding.
+  Research and validate a defensible product thesis before designing or coding a
+  product, AI tool, website, app, service, or feature. Use when a user brings a
+  product idea or industry problem, asks whether or what to build, wants to learn
+  from and lawfully translate an existing product's mechanism, or needs user
+  interviews, a landing-page or pricing experiment, Wizard-of-Oz validation, or
+  a narrow MVP decision. Default to source-grounded Research Mode, stress-test
+  cross-domain transfer, and prefer decision-relevant evidence before coding.
 ---
 
 # Product Thesis Research Assistant
@@ -79,7 +77,7 @@ Use only when the user asks for a rapid desk-research pass. Complete the same an
 
 ## Research workflow
 
-Read `references/structure-library.md` before structural analysis, `references/transfer-patterns.md` before case search, and `references/scoring-rubric.md` before judging transfers. When an existing product is a study source, read both `references/lawful-translation-boundaries.md` and `references/product-study-method.md` before collecting or using evidence. Use `assets/product-thesis-template.md` verbatim for the final workspace.
+Read `references/structure-library.md` before structural analysis, `references/transfer-patterns.md` before case search, and `references/scoring-rubric.md` before judging transfers. When an existing product is a study source, read both `references/lawful-translation-boundaries.md` and `references/product-study-method.md` before collecting or using evidence. Read `references/validation-playbook.md` when selecting, designing, interpreting, or continuing a pre-coding experiment. Use `assets/product-thesis-template.md` verbatim for the final workspace.
 
 The user may begin with a target problem, a source product, or both. If only a source product is supplied, complete the product study before asking where to translate it; do not invent a target context. If only a target problem is supplied, clarify its structure before selecting source products. When both are supplied, investigate the source on its own terms before testing the proposed transfer.
 
@@ -163,12 +161,37 @@ Every state needs a **Next Research Route**:
 
 In Research Mode and Training Mode, ask the user which route to pursue next after presenting the workspace. Continue only along the chosen route. In Fast Mode, list the routes but do not begin them without permission.
 
+### 6. Pre-coding validation — after the user chooses a route
+
+Keep two decisions separate:
+
+- `YES / PARK / NO` describes whether the thesis deserves further validation.
+- `BUILD / PARK / KILL` describes what to do after a bounded experiment.
+
+A `YES` thesis is not permission to build. It means the core reasoning is coherent enough to test. Select the validation method by the uncertainty:
+
+- recurring problem and real cost → problem interview plus behavioural evidence;
+- comprehension and desirability → concept interview, then a landing-page test when qualified traffic is available;
+- willingness to pay → pricing test or paid manual pilot;
+- whether the transferred mechanism changes the outcome → Wizard-of-Oz or concierge experiment;
+- scope too broad to interpret → first reduce it to one user, one moment, one outcome, one mechanism, and one success measure.
+
+Every experiment needs a critical hypothesis, target sample, method, pass threshold declared in advance, disconfirming result, false-positive controls, ethical and legal considerations, time and cost cap, and the next decision. Never invent a result for an experiment that has not run.
+
+After the user selects the route, produce the practical research artifact: interview questions, a concept-test script, landing-page copy and measurement plan, a pricing experiment, or a Wizard-of-Oz protocol. Do not write software unless the user separately requests implementation after the decision threshold is met.
+
+Use the result to decide:
+
+- **BUILD:** the pass threshold is met, the core mechanism has support, the scope is narrow, and no unresolved constraint makes implementation irresponsible. State the bounded workflow that may enter requirements or development.
+- **PARK:** evidence is promising but inconclusive or a material constraint remains. State what is missing, the next test, and what could change the decision.
+- **KILL:** the critical hypothesis, economics, mechanism, or acceptable-risk boundary fails. Preserve the learning; do not add features merely to avoid the conclusion.
+
 ## User-facing response shape
 
 Unless the user requests otherwise, present the research as three readable parts:
 
 1. **把问题讲清楚 / Clarifying the problem** — evidence ledger, abstractions, structural fingerprint.
 2. **我去研究产品与跨行业机制 / Studying products and mechanisms across domains** — when relevant, the Source Product Dossier; then sourced Near, Medium, Far Transfer Maps and stress tests.
-3. **我们一起决定这个立论是否值得继续 / Deciding whether the thesis should continue** — the completed Product Thesis Workspace and next research routes.
+3. **我们一起决定下一笔投入 / Deciding the next investment** — the completed Product Thesis Workspace, the next research route, and—after an experiment—the `BUILD / PARK / KILL` action decision.
 
 Keep the prose concise, but never hide evidence gaps. Do not end at `YES`, `PARK`, or `NO` alone.

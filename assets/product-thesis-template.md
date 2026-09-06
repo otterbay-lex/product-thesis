@@ -75,6 +75,40 @@
 - **Cheapest experiment / 最低成本实验：**
 - **Main failure condition / 主要失效条件：**
 
+## Pre-Coding Experiment Card · 开发前验证卡
+
+> `YES / PARK / NO` judges whether the thesis deserves validation. `BUILD / PARK / KILL` is decided only from an actual bounded experiment. Do not invent results that have not been observed.
+
+- **Decision to inform / 本实验要帮助决定什么：**
+- **Critical hypothesis / 关键假设：**
+- **Method and why / 方法及选择理由：** Problem interview / Concept interview / Landing-page test / Pricing test / Wizard-of-Oz or concierge experiment
+- **Target sample and recruitment / 目标样本与招募方式：**
+- **Test asset and procedure / 测试材料与步骤：**
+- **Pass threshold / 通过门槛：** Define before seeing results.
+- **Disconfirming result / 反证结果：**
+- **False-positive controls / 假阳性控制：**
+- **Ethical and legal considerations / 伦理与法律注意事项：**
+- **Time and cost cap / 时间与成本上限：**
+
+### MVP boundary · MVP 边界
+
+> For `[one user]` at `[one moment]`, deliver `[one mechanism]` to produce `[one outcome]`, measured by `[one success measure]`.
+
+- **One user / 一个用户：**
+- **One moment / 一个关键时刻：**
+- **One outcome / 一个结果：**
+- **One mechanism / 一个机制：**
+- **One success measure / 一个成功指标：**
+
+### Result and action decision · 结果与行动判断
+
+- **Observed result / 实际结果：** Leave blank until the experiment has run.
+- **Threshold met? / 是否达到门槛：**
+- **Action decision / 行动判断：** `BUILD` / `PARK` / `KILL`
+- **Reason tied to evidence / 以证据为基础的理由：**
+- **Bounded build scope or next test / 可进入开发的有限范围或下一项测试：**
+- **What would change this decision / 什么证据会改变判断：**
+
 ## Still unresolved · 仍未解决的问题
 
 1. 
