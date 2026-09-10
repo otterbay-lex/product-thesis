@@ -9,21 +9,25 @@
 
 ### 先为一个产品立论
 
-Product Thesis 是一个可安装给 AI Agent 使用的产品立论研究 Skill。它不替你批量产出创业点子，也不急着把一个念头扩写成产品功能。你先把背景完整讲出来，它再整理事实与假设、研究案例、核查迁移，再和你一起决定这个方向是否值得继续。
+Product Thesis 是一个可安装给 AI Agent 使用的产品立论研究 Skill。你可以带着一个尚未成形的问题来，也可以指着一个喜欢的产品问：“它为什么成立，其中什么值得学？”它不会替你批量产出创业点子，也不会急着把一个念头扩写成功能清单，而是先把事实、判断和假设分开，再研究机制能否迁移。
 
 许多想法不是不新，而是太早变成了方案。人一旦开始讨论页面、模型或功能，原本的问题常常被盖住。Product Thesis 会先把方案放在一旁，要求把行业术语一点点拿掉，直到能用不依赖原行业的语言说出那种反复出现的困难。
 
-然后，它才会向别的行业寻找线索。不是为了找一个“很像”的产品，而是为了看：另一个地方的人是否也被同一种结构困住；他们用什么机制让系统发生变化；这个机制挪回来之后，哪些部分仍然成立，哪些部分会失效。每个来源案例都应附可核查链接，不拿模型记忆里的公司故事充当研究。
+然后，它才会向别的行业寻找线索。不是为了找一个“很像”的产品，而是为了看：另一个地方的人是否也被同一种结构困住；他们用什么机制让系统发生变化；这个机制挪回来之后，哪些部分仍然成立，哪些部分会失效。每个来源案例都应附可核查链接，不拿模型记忆里的公司故事充当研究。学习的对象是公开可观察的价值、流程、激励和商业逻辑，不是别人的代码、私有数据或商业秘密。
+
+研究走到最后，也不一定马上写代码。很多时候，更诚实的下一步是一组用户访谈、一次手工服务、一个有明确阈值的 Landing Page 或定价实验。只有实验真的支持核心机制，才把一个很窄的工作流交给开发。
 
 有些推演最后会得到 `PARK`，甚至 `NO`。这不是流程失败。能在投入数周开发前发现一个想法站不住，本来就是这件事最有价值的结果之一。
 
 ### Make the case before making the product
 
-Product Thesis is an installable product-research skill for AI agents. It does not mass-produce startup ideas or rush a first thought into a feature set. You first describe the context in full; it then separates facts from assumptions, researches source cases, checks the transfer, and helps decide whether the direction should continue.
+Product Thesis is an installable research skill for making the case for a product. You may arrive with an unresolved problem, or with a product you admire and a question: why does it work, and what—if anything—is worth carrying elsewhere? The skill does not mass-produce startup ideas or rush a first thought into a feature set. It separates facts, judgments, and assumptions before testing whether a mechanism can travel.
 
 Many ideas are not unoriginal; they simply become solutions too soon. Once the conversation turns to screens, models, or features, the original problem can disappear beneath them. Product Thesis parks the solution and removes industry language layer by layer, until the recurring difficulty can be described without relying on the source domain.
 
-Only then does it look elsewhere for clues. The question is not whether another product looks similar. It is whether another field was constrained by the same structure, what mechanism changed that system, and which parts of that mechanism survive—or fail—when moved back. Every source case should carry a verifiable link; remembered company stories are not research.
+Only then does it look elsewhere for clues. The question is not whether another product looks similar. It is whether another field was constrained by the same structure, what mechanism changed that system, and which parts of that mechanism survive—or fail—when moved back. Every source case should carry a verifiable link; remembered company stories are not research. Publicly observable value, workflows, incentives, and business logic are fair study material. Code, private data, and trade secrets are not.
+
+The next step is not necessarily coding. It may be a set of interviews, a manual service, or a landing-page or pricing experiment with a declared threshold. A narrow workflow earns its way into development only after the experiment supports the core mechanism.
 
 Some explorations should end in `PARK`, or even `NO`. That is not a failure of the process. Discovering that an idea cannot carry its own weight before weeks of development is one of the reasons to use it.
 
@@ -35,13 +39,13 @@ Some explorations should end in `PARK`, or even `NO`. That is not a failure of t
 
 ---
 
-## Features · 功能
+## How it works · 它怎样工作
 
-### 1. Research intake｜先把背景讲完整
+### 1. Research intake｜从问题或产品进入
 
-首次不需要逐关回答。你只要尽量完整地说出：具体问题、受影响的人、他们现在怎样处理、你的方案直觉、替代办法、见过的案例或数据，以及你的疑虑；不知道的地方可以直接写“不确定”。Skill 会先整理，而不是立刻追问。
+首次不需要逐关回答。你可以讲一个目标问题、一个想研究的产品，或两者一起讲。对于目标问题，请说清受影响的人、当前做法、方案直觉和疑虑；对于来源产品，请说清你欣赏的地方，以及希望迁移到哪里。不知道的部分可以直接写“不确定”。Skill 会先整理，再决定哪里值得追问。
 
-You do not need to answer a gate-by-gate questionnaire. Describe the problem, affected people, current behaviour, solution intuition, alternatives, examples or data, and doubts in one pass; say “uncertain” where needed. The skill organises first rather than immediately interrogating you.
+You do not need to answer a gate-by-gate questionnaire. Begin with a target problem, a source product, or both. For a target, describe the people, current behaviour, solution intuition, and doubts. For a source, explain what you admire and where you hope it might travel. Say “uncertain” where needed. The skill organises before it interrogates.
 
 ### 2. Abstraction｜把行业名字慢慢拿掉
 
@@ -49,7 +53,13 @@ You do not need to answer a gate-by-gate questionnaire. Describe the problem, af
 
 The problem moves through three levels: the practical job, the system that makes the job fail repeatedly, and the underlying tension that does not depend on the original industry. Only then does it receive causal structure labels such as information asymmetry, coordination cost, trust deficit, or delayed reward.
 
-### 3. Source-grounded Transfer Map｜有来源的跨行业迁移
+### 3. Product dossier｜先弄懂来源产品
+
+如果你带来的是一个喜欢的产品，Skill 会先在它自己的语境里研究：谁在什么时刻使用它、原来的替代办法是什么、价值承诺靠什么兑现、谁付钱、谁承担成本、增长与信任怎样形成。公开事实会附来源，合理推断会单独标明，未经核实的线索不会被包装成结论。
+
+When you bring an admired product, the skill first studies it on its own terms: who uses it and when, what it replaces, how the promise is delivered, who pays, who bears the cost, and how trust and growth may form. Public facts are sourced, inferences are labelled, and unverified leads are not dressed up as findings.
+
+### 4. Source-grounded Transfer Map｜有来源的跨行业迁移
 
 这是这个 Skill 最在意的部分。Airbnb、Duolingo、GitHub 等在这里不是模板，而是被拆开的机制样本。Skill 会主动研究近、中、远三个层次的案例；每个案例附上可核查来源，并写成：
 
@@ -65,17 +75,23 @@ The problem moves through three levels: the practical job, the system that makes
 
 Airbnb, Duolingo, GitHub, and similar cases are not templates here. They are mechanism samples. The skill researches Near, Medium, and Far cases, cites each one, and turns each into a Transfer Map: target structure, equivalent source structure, source mechanism, smallest plausible adaptation, and the boundary where the transfer breaks.
 
-### 4. Break the Analogy｜给类比找反例
+### 5. Break the Analogy｜给类比找反例
 
 每个候选迁移都必须回答：什么能映射，什么不能映射，哪些变量不同，为什么可能失败，以及什么证据可以尽快推翻它。Far Transfer 的表面差异越大，越不能因为它新鲜就默认它成立。
 
 Every candidate transfer must say what maps, what does not, which variables differ, why it may fail, and what evidence could disprove it quickly. The more distant the surface resemblance, the less novelty alone should count as evidence.
 
-### 5. Thesis Workspace｜最后留下可继续修正的立论工作台
+### 6. Validate before coding｜先做最小验证
 
-最后生成的是一份 Product Thesis Workspace，而不是只给出一句结论。它会保留暂定立论、证据账本、尚未解决的问题和下一步研究路线。`PARK` 会明确指出缺什么证据，以及接下来是验证问题、深挖机制、比较机制还是做最低成本实验。`YES` 只代表值得做一个小实验，不代表应该立刻开发完整产品。
+立论成立，只代表值得验证。Skill 会根据最危险的不确定性，选择问题访谈、概念访谈、Landing Page、定价测试、Wizard-of-Oz 或人工 concierge 实验，并提前写清样本、通过阈值、失败信号和停止条件。它测试的是机制是否改变结果，不是用户是否夸这个点子。
 
-The final output is a Product Thesis Workspace, not a one-line verdict. It preserves a provisional thesis, evidence ledger, unresolved questions, and next research routes. A `PARK` names the missing evidence and whether to validate the problem, deepen a mechanism, compare mechanisms, or run the cheapest experiment. A `YES` only earns a small experiment, not a full build.
+A coherent thesis only earns a test. The skill chooses a problem interview, concept interview, landing page, pricing test, Wizard-of-Oz, or concierge experiment according to the riskiest uncertainty. Sample, pass threshold, disconfirming signal, and stop condition are declared before the result. The test asks whether the mechanism changes the outcome—not whether people compliment the idea.
+
+### 7. Thesis Workspace｜留下能继续工作的立论
+
+最后生成的是一份 Product Thesis Workspace，而不是只给出一句结论。它会保留暂定立论、证据账本、尚未解决的问题和下一步研究路线。`YES / PARK / NO` 判断立论是否值得验证；只有真实实验完成后，才会给出 `BUILD / PARK / KILL`。`BUILD` 也只放行被验证过的那一个窄工作流，不等于批准整个产品愿景。
+
+The final output is a Product Thesis Workspace, not a one-line verdict. It preserves a provisional thesis, evidence ledger, unresolved questions, and next research routes. `YES / PARK / NO` judges whether a thesis deserves validation; `BUILD / PARK / KILL` comes only after a real experiment. Even `BUILD` releases one tested, narrow workflow—not the whole product vision.
 
 ## Installation · 安装
 
@@ -93,9 +109,9 @@ For other agents, provide [`SKILL.md`](SKILL.md), `references/`, and `assets/` t
 
 ## Usage · 使用方式
 
-默认使用 Research Mode。第一次只需要用自然语言把背景讲完整；Skill 会先整理“用户事实 / 用户判断 / 外部证据 / 待验证假设”，再主动研究有来源的近、中、远行业案例，最后给出可以继续修正的立论工作台。
+默认使用 Research Mode。第一次只需要用自然语言把背景讲完整；Skill 会先整理“用户事实 / 用户判断 / 外部证据 / 待验证假设”。如果你带来一个来源产品，它会先完成 Product Dossier；如果你带来一个目标问题，它会先抽象问题结构。两条路在 Transfer Map 汇合，最后形成可以继续修正的立论工作台。
 
-Research Mode is the default. In one natural-language intake, you provide the context; the skill first creates an evidence ledger, then researches sourced Near, Medium, and Far cases, and returns a revisable thesis workspace.
+Research Mode is the default. In one natural-language intake, you provide the context and the skill separates user facts, user judgments, external evidence, and hypotheses. A source product receives a Product Dossier; a target problem receives structural abstraction. The two paths meet in a Transfer Map and end in a revisable thesis workspace.
 
 如果你想刻意训练自己的抽象能力，可以明确说 Training Mode；它会在三处邀请你先作判断，但仍会完成研究。需要快速桌面研究时，明确说 Fast Mode。
 
@@ -119,25 +135,41 @@ Use product-thesis in Fast Mode to form a Product Thesis:
 I am considering a service that helps office workers spend less energy choosing what to wear each day.
 ```
 
+```text
+使用 product-thesis 的 Research Mode，研究 Costco 的有限选择与会员机制为什么成立，
+再判断其中哪些机制可以合法迁移到小企业的软件采购。不要复制功能，先做来源产品档案和类比压力测试。
+
+Use product-thesis in Research Mode to study why Costco's limited-selection and membership mechanisms work,
+then test what can be lawfully translated to software procurement for small businesses. Do not copy features; begin with a source-product dossier and an analogy stress test.
+```
+
+当立论得到 `YES` 后，你可以继续让它产出下一项研究材料，例如：“把最关键假设改写成 8 个用户访谈问题”“为这个机制设计一个不写代码的 Wizard-of-Oz 实验”“写一版定价实验，并告诉我什么结果会让我们停止”。
+
+After a `YES`, ask for the next research artifact: “turn the critical assumption into eight interview questions,” “design a no-code Wizard-of-Oz test for this mechanism,” or “draft a pricing experiment and tell me what result should make us stop.”
+
 ## Principles & Boundaries · 原则与边界
 
 - 方案可以先出现，但在问题结构分析完成前，不讨论产品功能、技术架构或 UI。
-- 迁移的是机制，不是品牌、功能或界面。
+- 可以研究公开产品页、定价、帮助中心、公开访谈、监管文件、论文和评论；事实、推断与未核实线索必须分开。
+- 迁移的是机制，不是品牌、功能或界面；不复制代码、受保护素材、私有数据或非公开流程。
+- 不通过逆向工程、技术探测、绕过访问控制或诱导泄密来了解竞品。
 - 没有访谈、行为数据或实际观察时，结论应当写成假设，而不是事实。
-- `NO` 与 `PARK` 都是有价值的结果；不要为了完成流程强行生成产品。
+- `NO`、`PARK` 与 `KILL` 都是有价值的结果；不要为了完成流程强行挽救产品。
 - Training Mode 不替用户做判断，它训练的是结构识别、跨行业迁移与反证能力。
 
 - A solution may appear early, but features, architecture, and UI wait until the problem structure is understood.
-- Transfer mechanisms, not brands, features, or interfaces.
+- Public product pages, pricing, help centres, interviews, filings, research, and reviews may be studied; facts, inferences, and unverified leads must remain distinct.
+- Transfer mechanisms, not brands, features, or interfaces. Do not copy code, protected material, private data, or non-public processes.
+- Do not use reverse engineering, technical probing, access-control bypass, or induced disclosure to study a competitor.
 - Without interviews, behavioural evidence, or direct observation, conclusions remain hypotheses rather than facts.
-- `NO` and `PARK` are useful results; do not invent a product just to finish the workflow.
+- `NO`, `PARK`, and `KILL` are useful results; do not rescue a product merely to finish the workflow.
 - Training Mode does not make decisions for the user. It is intended to develop structural recognition, cross-domain transfer, and falsification.
 
-## v0.1.0 Release Notes · 发布说明
+## What changes in v0.2.0 · 这一版多做了什么
 
-第一个公开版本包含七个立论 Gate、Training Mode 与 Fast Mode、可扩展结构标签库、五个机制样本、Transfer Map、轻量评分规则、Product Thesis Card 以及法律科技、生活方式、AI 知识产品三组回归案例。
+初代主要回答“我的想法值不值得继续”。这一版把另一种常见起点也接了进来：你发现一个好产品，希望理解它为什么成立，并判断其机制能否迁移。为此新增了来源产品档案、合法研究边界、竞争解释、五种开发前验证方法，以及只有实际实验完成后才会出现的 `BUILD / PARK / KILL` 判断。
 
-The first public version includes seven thesis-building gates, Training Mode and Fast Mode, an expandable structure library, five mechanism samples, Transfer Maps, a lightweight scoring rubric, the Product Thesis Card, and three regression cases for legal tech, lifestyle, and AI knowledge products.
+The first release mainly asked whether your own idea deserved to continue. This version also supports a second starting point: an admired product whose success you want to understand and translate. It adds source-product dossiers, lawful research boundaries, competing explanations, five pre-coding validation methods, and a `BUILD / PARK / KILL` decision that appears only after an actual experiment.
 
 ## License · 许可证
 
