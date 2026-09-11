@@ -30,6 +30,28 @@ The seven gates below are an internal research spine. In the default mode, do no
 - Every analogy needs a failure boundary and a way to be disproved.
 - `YES`, `PARK`, and `NO` are decision states, not conversation endings. Always show the next research route.
 
+## User-first output contract
+
+The research may be detailed; the first answer should not feel like a research database. Keep the seven gates, evidence labels, transfer scores, and full tables in the reasoning layer unless the user asks to inspect them.
+
+Before showing a dossier, ledger, scorecard, or workspace, answer in the user's language and in ordinary prose:
+
+1. **Provisional judgment:** Say what you currently think and how confident that judgment is. Put `YES`, `PARK`, or `NO` after the explanation, not in place of it.
+2. **Best reason to continue:** Explain the strongest evidence or structural reason in concrete language.
+3. **Strongest reason against:** Give the competing explanation, non-mapping variable, or failure condition most likely to overturn the thesis.
+4. **Recommended action:** Recommend one next action. Say who to involve, what to do, what to observe, and what result would change the judgment.
+
+Read and adapt `assets/product-judgment-brief.md` for this default response. Treat it as a writing order, not a form to fill mechanically.
+
+Use progressive disclosure:
+
+- Do not open with L1/L2/L3 labels, a Structural Fingerprint, Gate names, scores, or a large table. Translate the important reasoning into plain language first.
+- In the main answer, explain the one cross-domain mechanism that matters most. Mention rejected or weaker transfers only when they materially change the judgment.
+- Keep citations next to the claims they support, but do not make a source list the main story.
+- Match the user's language. Do not duplicate the answer bilingually unless the user asks.
+- Offer the complete Product Thesis Workspace after the brief. Show it when the user asks for the evidence trail, wants to compare mechanisms, needs a durable research record, or requests a deep analysis.
+- Prefer one recommended route over a menu. Offer alternatives only when two routes are genuinely close or the user asks to compare them.
+
 ## Lawful product study boundary
 
 Read `references/lawful-translation-boundaries.md` whenever the user names an existing product, company, interface, workflow, dataset, or proprietary system as something to learn from, reproduce, translate, or improve.
@@ -59,7 +81,7 @@ Ask the user once for a reasonably complete description. Use this exact invitati
 
 > 请尽量完整描述：你看见的具体问题、谁在受影响、他们现在怎样处理、你已有的方案直觉、你见过的替代办法，以及任何案例、数据或疑虑。不知道的部分可以直接写“不确定”。
 
-After receiving it, do not serially interview the user unless a missing fact makes research impossible. First organise what is known, research, and return a complete working analysis.
+After receiving it, do not serially interview the user unless a missing fact makes research impossible. First organise what is known and complete the necessary research, then return a readable Product Judgment Brief. Keep the full working analysis available for expansion rather than placing it all in the first answer.
 
 ### Training Mode — optional
 
@@ -77,7 +99,7 @@ Use only when the user asks for a rapid desk-research pass. Complete the same an
 
 ## Research workflow
 
-Read `references/structure-library.md` before structural analysis, `references/transfer-patterns.md` before case search, and `references/scoring-rubric.md` before judging transfers. When an existing product is a study source, read both `references/lawful-translation-boundaries.md` and `references/product-study-method.md` before collecting or using evidence. Read `references/validation-playbook.md` when selecting, designing, interpreting, or continuing a pre-coding experiment. Use `assets/product-thesis-template.md` verbatim for the final workspace.
+Read `references/structure-library.md` before structural analysis, `references/transfer-patterns.md` before case search, and `references/scoring-rubric.md` before judging transfers. When an existing product is a study source, read both `references/lawful-translation-boundaries.md` and `references/product-study-method.md` before collecting or using evidence. Read `references/validation-playbook.md` when selecting, designing, interpreting, or continuing a pre-coding experiment. Use `assets/product-judgment-brief.md` for the default user-facing answer. Use `assets/product-thesis-template.md` only for the expanded workspace and adapt it to the user's language and the evidence actually available.
 
 The user may begin with a target problem, a source product, or both. If only a source product is supplied, complete the product study before asking where to translate it; do not invent a target context. If only a target problem is supplied, clarify its structure before selecting source products. When both are supplied, investigate the source on its own terms before testing the proposed transfer.
 
@@ -89,7 +111,7 @@ Quietly apply the old Gates 1–3:
 2. Create L1 functional, L2 system, and L3 principle abstractions.
 3. Produce a 3–7 tag Structural Fingerprint in this form: `[structure A] + [structure B] + [structure C] → [recurring failure]`.
 
-Present these in a compact **Evidence Ledger** with four columns: `User-supplied fact`, `User judgment`, `External evidence`, and `Assumption to verify`. If the user supplied too little, proceed with clearly labelled assumptions rather than asking a long chain of questions.
+Maintain a compact **Evidence Ledger** with four categories: `User-supplied fact`, `User judgment`, `External evidence`, and `Assumption to verify`. Do not display the ledger by default. Surface only the facts and uncertainties that change the provisional judgment. If the user supplied too little, proceed with clearly labelled assumptions rather than asking a long chain of questions.
 
 ### 2. Source Product Dossier — when studying an existing product
 
@@ -120,7 +142,7 @@ Research one candidate each for Near, Medium, and Far Transfer:
 
 When web access exists, search before naming a source case. Prefer primary sources: company/product documentation, original research, official reports, filings, or direct case material. Use credible independent reporting only when a primary source cannot establish the relevant mechanism. Cite each source as a direct Markdown link next to the factual claim it supports.
 
-For every source case, include:
+For every source case, record internally or in the expanded workspace:
 
 | Transfer type | Source case and source | Original problem | Mechanism | Structural variables that map | Variables that do not map | Failure boundary |
 | --- | --- | --- | --- | --- | --- |
@@ -145,7 +167,7 @@ Then score Structural Fit and Transfer Distance using the rubric. Explain:
 
 ### 5. Provisional thesis and research routes
 
-Complete one **Product Thesis Workspace**, not merely a verdict. The thesis must name the selected Transfer Map and explain why the borrowed mechanism may survive its critical difference.
+Develop enough of the **Product Thesis Workspace** to support the judgment, but do not display the full workspace by default. The thesis must identify the selected Transfer Map and explain why the borrowed mechanism may survive its critical difference. Present that reasoning first through the Product Judgment Brief.
 
 Choose a decision state:
 
@@ -156,10 +178,10 @@ Choose a decision state:
 Every state needs a **Next Research Route**:
 
 - `YES` → run one bounded experiment with a pass/fail signal, then define the next narrow workflow or requirements question after a pass.
-- `PARK` → give 2–3 routes selected from validating problem reality, deepening one mechanism, comparing competing mechanisms, or designing the cheapest experiment. State what each route could change.
+- `PARK` → recommend the single route most likely to reduce the decisive uncertainty: validating problem reality, deepening one mechanism, comparing competing mechanisms, or designing the cheapest experiment. Mention up to two alternatives only when they are genuinely close, and state what each could change.
 - `NO` → preserve the invalidated assumption and reusable learning; suggest at most one adjacent problem cut, without inventing features to rescue the rejected thesis.
 
-In Research Mode and Training Mode, ask the user which route to pursue next after presenting the workspace. Continue only along the chosen route. In Fast Mode, list the routes but do not begin them without permission.
+In Research Mode and Training Mode, ask whether the user wants to take the recommended action or inspect the research trail after presenting the brief. Continue only along the chosen route. In Fast Mode, state the recommendation but do not begin the next action without permission.
 
 ### 6. Pre-coding validation — after the user chooses a route
 
@@ -168,7 +190,7 @@ Keep two decisions separate:
 - `YES / PARK / NO` describes whether the thesis deserves further validation.
 - `BUILD / PARK / KILL` describes what to do after a bounded experiment.
 
-A `YES` thesis is not permission to build. It means the core reasoning is coherent enough to test. Select the validation method by the uncertainty:
+A `YES` thesis is not permission to build. It means the core reasoning is coherent enough to test. Until a real experiment has run, the action state is `NOT YET ELIGIBLE`; do not pre-fill `BUILD`, `PARK`, or `KILL`. Select the validation method by the uncertainty:
 
 - recurring problem and real cost → problem interview plus behavioural evidence;
 - comprehension and desirability → concept interview, then a landing-page test when qualified traffic is available;
@@ -188,10 +210,12 @@ Use the result to decide:
 
 ## User-facing response shape
 
-Unless the user requests otherwise, present the research as three readable parts:
+Default to a short decision narrative, even when the underlying research is extensive:
 
-1. **把问题讲清楚 / Clarifying the problem** — evidence ledger, abstractions, structural fingerprint.
-2. **我去研究产品与跨行业机制 / Studying products and mechanisms across domains** — when relevant, the Source Product Dossier; then sourced Near, Medium, Far Transfer Maps and stress tests.
-3. **我们一起决定下一笔投入 / Deciding the next investment** — the completed Product Thesis Workspace, the next research route, and—after an experiment—the `BUILD / PARK / KILL` action decision.
+1. Start with the provisional judgment in plain language.
+2. Explain the strongest reason for it and the strongest reason it may be wrong.
+3. Describe the most useful transferred mechanism as a causal idea, not as a product feature.
+4. End with one recommended action and the observation that would change the judgment.
+5. Offer to expand the evidence ledger, Source Product Dossier, Near/Medium/Far research, scores, and full Product Thesis Workspace.
 
-Keep the prose concise, but never hide evidence gaps. Do not end at `YES`, `PARK`, or `NO` alone.
+When the user asks for the full research record, use `assets/product-thesis-template.md`. Do not force empty sections, repeat the same conclusion under several headings, or translate every heading into two languages. Keep the prose concise, but never hide evidence gaps. Do not end at `YES`, `PARK`, or `NO` alone.

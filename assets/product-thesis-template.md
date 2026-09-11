@@ -1,12 +1,18 @@
-# Product Thesis Workspace · 产品立论工作台
+# Full Product Thesis Workspace · 完整产品立论工作台
 
-## 暂定结论 / Provisional thesis
+> Use this expanded record only when the user asks to inspect the research, compare mechanisms, or preserve a durable decision record. Write in the user's language; bilingual labels are reference labels, not a requirement to duplicate the answer. Omit empty or irrelevant sections.
 
-- **Current thesis / 当前最可信的产品立论：**
-- **Decision state / 当前判断：** `YES` / `PARK` / `NO`
-- **Why now / 当前为什么得到这个判断：**
+## Reader's brief · 给人的结论
+
+- **Provisional judgment / 暂定判断：** Explain the conclusion in ordinary language before adding `YES`, `PARK`, or `NO`.
+- **Best reason to continue / 最强支持理由：**
+- **Strongest reason against / 最强反对理由：**
+- **Recommended action / 建议动作：** Name one action, who should take it, what to observe, and what result would change the judgment.
+- **Action state / 当前行动状态：** `NOT YET ELIGIBLE` until an experiment has run; after observed results, use `BUILD` / `PARK` / `KILL`.
 
 ## Evidence ledger · 证据账本
+
+> Include only evidence that affects the judgment. Do not repeat the same claim in several rows.
 
 | Type / 类型 | Statement / 内容 | Source or basis / 来源或依据 | Confidence / 可信度 |
 | --- | --- | --- | --- |
@@ -77,7 +83,7 @@
 
 ## Pre-Coding Experiment Card · 开发前验证卡
 
-> `YES / PARK / NO` judges whether the thesis deserves validation. `BUILD / PARK / KILL` is decided only from an actual bounded experiment. Do not invent results that have not been observed.
+> `YES / PARK / NO` judges whether the thesis deserves validation. Before an experiment runs, use `NOT YET ELIGIBLE`. `BUILD / PARK / KILL` is decided only from an actual bounded experiment. Do not invent results that have not been observed.
 
 - **Decision to inform / 本实验要帮助决定什么：**
 - **Critical hypothesis / 关键假设：**
@@ -104,7 +110,7 @@
 
 - **Observed result / 实际结果：** Leave blank until the experiment has run.
 - **Threshold met? / 是否达到门槛：**
-- **Action decision / 行动判断：** `BUILD` / `PARK` / `KILL`
+- **Action decision / 行动判断：** `NOT YET ELIGIBLE` before the experiment; `BUILD` / `PARK` / `KILL` after observed results.
 - **Reason tied to evidence / 以证据为基础的理由：**
 - **Bounded build scope or next test / 可进入开发的有限范围或下一项测试：**
 - **What would change this decision / 什么证据会改变判断：**
