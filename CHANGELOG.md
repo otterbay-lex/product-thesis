@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.0] — Unreleased
+## [0.2.0] — 2026-10-08
 
 ### Added
 
@@ -27,7 +27,7 @@
 - Added public-source product study, lawful mechanism translation, competing explanations, and five pre-coding validation methods.
 - The default answer now gives a readable judgment, its strongest objection, and one next action. The full research workspace is available on request.
 - Added six fictional experiment-result scenarios alongside twelve intake scenarios. Reported outcomes are judged against the original threshold and observation window; a pass applies only to the tested workflow.
-- This remains an instruction-only release candidate. Model-based checks do not replace real user testing.
+- This is an instruction-only release. Model-based checks do not replace real user testing.
 
 ### Still intentionally absent
 

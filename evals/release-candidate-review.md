@@ -46,7 +46,7 @@ Verified three central source claims against primary material: recent rather tha
 - Apache-2.0 full license and patent grant retained. Added package-level .gitignore for export to the public repository.
 - Chinese/English README describes the short answer and optional full workspace; CHANGELOG records the candidate changes and limitations.
 - Local installed skill updated with a recoverable backup. Global reminder now includes product study, mechanism translation and pre-coding validation.
-- v0.2.0 remains Unreleased. Publishing must export this package, not the surrounding monorepo. Existing unrelated plan edits must not enter the release.
+- At candidate review, v0.2.0 was Unreleased. Release preparation subsequently dated the changelog 2026-10-08. Publishing exports this package, not the surrounding monorepo; unrelated plan edits are excluded.
 
 ## Remaining limitation · 仍需观察
 
