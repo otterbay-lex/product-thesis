@@ -87,11 +87,15 @@ Every candidate transfer must say what maps, what does not, which variables diff
 
 A coherent thesis only earns a test. The skill chooses a problem interview, concept interview, landing page, pricing test, Wizard-of-Oz, or concierge experiment according to the riskiest uncertainty. Sample, pass threshold, disconfirming signal, and stop condition are declared before the result. The test asks whether the mechanism changes the outcome—not whether people compliment the idea.
 
-### 7. Thesis Workspace｜留下能继续工作的立论
+### 7. A readable judgment｜先说清判断，再展开研究
 
-最后生成的是一份 Product Thesis Workspace，而不是只给出一句结论。它会保留暂定立论、证据账本、尚未解决的问题和下一步研究路线。`YES / PARK / NO` 判断立论是否值得验证；只有真实实验完成后，才会给出 `BUILD / PARK / KILL`。`BUILD` 也只放行被验证过的那一个窄工作流，不等于批准整个产品愿景。
+你先看到一段可以读懂、可以照着做的判断：目前怎么看，最有力的理由是什么，哪一个反方理由可能推翻它，以及接下来最值得做的一件事。正文通常只展开一个关键迁移机制。需要看研究依据时，再展开证据账本、近中远案例、类比压力测试和完整的 Product Thesis Workspace。
 
-The final output is a Product Thesis Workspace, not a one-line verdict. It preserves a provisional thesis, evidence ledger, unresolved questions, and next research routes. `YES / PARK / NO` judges whether a thesis deserves validation; `BUILD / PARK / KILL` comes only after a real experiment. Even `BUILD` releases one tested, narrow workflow—not the whole product vision.
+`YES / PARK / NO` 判断立论是否值得验证。没有实验依据，就暂不进入开发。只有真实实验完成后，才会给出 `BUILD / PARK / KILL`；`BUILD` 只放行被验证过的窄工作流。`PARK` 会说清缺少什么证据、下一步怎么补，以及什么结果会改变判断。
+
+You first receive a readable judgment: what seems plausible, the strongest reason for it, the objection most likely to overturn it, and one useful next action. The main answer normally explains one selected mechanism. Ask to expand the evidence ledger, Near/Medium/Far cases, stress tests, or complete Product Thesis Workspace when you want the research trail.
+
+`YES / PARK / NO` judges whether a thesis deserves validation. Development waits for experimental evidence. `BUILD / PARK / KILL` follows an actual experiment, and `BUILD` applies only to the tested workflow. A `PARK` judgment names the missing evidence, how to obtain it, and what could change the decision.
 
 ## Installation · 安装
 
@@ -109,9 +113,9 @@ For other agents, provide [`SKILL.md`](SKILL.md), `references/`, and `assets/` t
 
 ## Usage · 使用方式
 
-默认使用 Research Mode。第一次只需要用自然语言把背景讲完整；Skill 会先整理“用户事实 / 用户判断 / 外部证据 / 待验证假设”。如果你带来一个来源产品，它会先完成 Product Dossier；如果你带来一个目标问题，它会先抽象问题结构。两条路在 Transfer Map 汇合，最后形成可以继续修正的立论工作台。
+默认使用 Research Mode。第一次只需要用自然语言把背景讲完整；Skill 会先整理事实、判断和假设，再研究问题结构或来源产品。两条路在 Transfer Map 汇合。你先读到简短判断，需要时再展开可继续修正的立论工作台。
 
-Research Mode is the default. In one natural-language intake, you provide the context and the skill separates user facts, user judgments, external evidence, and hypotheses. A source product receives a Product Dossier; a target problem receives structural abstraction. The two paths meet in a Transfer Map and end in a revisable thesis workspace.
+Research Mode is the default. Provide the context in natural language; the skill separates facts, judgments, and hypotheses, then studies the problem structure or source product. The paths meet in a Transfer Map. You receive a short judgment first and can expand the revisable research record when needed.
 
 如果你想刻意训练自己的抽象能力，可以明确说 Training Mode；它会在三处邀请你先作判断，但仍会完成研究。需要快速桌面研究时，明确说 Fast Mode。
 
@@ -172,6 +176,10 @@ After a `YES`, ask for the next research artifact: “turn the critical assumpti
 The first release mainly asked whether your own idea deserved to continue. This version also supports a second starting point: an admired product whose success you want to understand and translate. It adds source-product dossiers, lawful research boundaries, competing explanations, five pre-coding validation methods, and a `BUILD / PARK / KILL` decision that appears only after an actual experiment.
 
 ## License · 许可证
+
+本版的测试范围、发现的问题和仍未验证的部分见[发布候选检查](evals/release-candidate-review.md)。这些是模型行为测试，不是产品需求已经成立的证据。
+
+See the [candidate review](evals/release-candidate-review.md) for test coverage, corrections and remaining limitations. These checks examine model behaviour; they do not establish product demand.
 
 本项目采用 [Apache License 2.0](LICENSE)，包含专利授权与专利诉讼终止条款。使用者仍需自行确认其输入材料、案例、商标和其他第三方内容的授权。
 

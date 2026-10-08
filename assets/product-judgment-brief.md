@@ -2,6 +2,8 @@
 
 Use this as a writing order, not a form. Write in the user's language. Keep the first answer readable without the Product Thesis vocabulary, and omit any heading that would only repeat the paragraph beneath it.
 
+Aim for 800–1500 Chinese characters or 400–700 English words in an ordinary first answer, with at most three short headings. Do not pad a shorter sufficient answer. Explain one mechanism; keep the rest for requested expansion. Studying a named product does not by itself mean writing a full dossier for the reader.
+
 ## Opening judgment
 
 Begin with two to four sentences in ordinary language:
@@ -36,6 +38,8 @@ Recommend one action. Make it runnable:
 - what result supports continuing, parking, or stopping.
 
 If no experiment has run, describe the action state as `NOT YET ELIGIBLE`, not `BUILD`, `PARK`, or `KILL`. Those action decisions require observed results.
+
+Keep that internal label out of ordinary prose: “还没有实验依据，暂不进入开发” is enough. For reported results, use the original threshold and observation window, explain any missing evidence, and restrict a pass to the tested workflow. Proposed numbers are experiment-design choices, not proven industry benchmarks.
 
 ## Offer the research trail
 

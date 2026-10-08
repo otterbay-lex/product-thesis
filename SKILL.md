@@ -43,10 +43,15 @@ Before showing a dossier, ledger, scorecard, or workspace, answer in the user's 
 
 Read and adapt `assets/product-judgment-brief.md` for this default response. Treat it as a writing order, not a form to fill mechanically.
 
+For an ordinary first answer, aim for 800–1500 Chinese characters or 400–700 English words; shorter is welcome when sufficient. This is an editing target, not a quota. Use at most three short headings and explain one selected mechanism. A named source product does not automatically call for a full report: keep its six-lens dossier internal unless requested. Include only sources that support the selected mechanism or decisive objection. If the answer grows, remove secondary cases and repeated conclusions before removing evidence or failure conditions.
+
+When only a source product is supplied, explain one mechanism and its strongest competing explanation, then ask for the intended user and context. Do not invent a target product or pretend a transfer has already passed.
+
 Use progressive disclosure:
 
 - Do not open with L1/L2/L3 labels, a Structural Fingerprint, Gate names, scores, or a large table. Translate the important reasoning into plain language first.
 - In the main answer, explain the one cross-domain mechanism that matters most. Mention rejected or weaker transfers only when they materially change the judgment.
+- For a target problem, prefer a supported mechanism from a meaningfully different field for that explanation. A same-category competitor is a useful comparator, but cannot substitute for cross-domain research. Make the source field, mapped variable, and decisive difference understandable in the prose. If no cross-domain candidate survives, say that plainly and recommend the missing research; do not manufacture a distant analogy.
 - Keep citations next to the claims they support, but do not make a source list the main story.
 - Match the user's language. Do not duplicate the answer bilingually unless the user asks.
 - Offer the complete Product Thesis Workspace after the brief. Show it when the user asks for the evidence trail, wants to compare mechanisms, needs a durable research record, or requests a deep analysis.
@@ -200,6 +205,8 @@ A `YES` thesis is not permission to build. It means the core reasoning is cohere
 
 Every experiment needs a critical hypothesis, target sample, method, pass threshold declared in advance, disconfirming result, false-positive controls, ethical and legal considerations, time and cost cap, and the next decision. Never invent a result for an experiment that has not run.
 
+Interpret reported results against the original threshold and observation window. Separate user-reported results from independently checked evidence. Small pilots support bounded decisions, not population-level certainty. Signups, compliments, or interest alone do not establish behavioural change or willingness to pay. Do not lower a threshold after seeing results or use a two-week observation to claim a 90-day retention pass. A passed demand signal does not override a failed mechanism, unacceptable cost, or unresolved access constraint.
+
 After the user selects the route, produce the practical research artifact: interview questions, a concept-test script, landing-page copy and measurement plan, a pricing experiment, or a Wizard-of-Oz protocol. Do not write software unless the user separately requests implementation after the decision threshold is met.
 
 Use the result to decide:
@@ -217,5 +224,7 @@ Default to a short decision narrative, even when the underlying research is exte
 3. Describe the most useful transferred mechanism as a causal idea, not as a product feature.
 4. End with one recommended action and the observation that would change the judgment.
 5. Offer to expand the evidence ledger, Source Product Dossier, Near/Medium/Far research, scores, and full Product Thesis Workspace.
+
+Keep internal state labels in the research record. In ordinary Chinese prose, express `NOT YET ELIGIBLE` as “还没有实验依据，暂不进入开发”; explain other labels when used. Pure product discussion should not append a file-change or engineering completion report when no files were changed.
 
 When the user asks for the full research record, use `assets/product-thesis-template.md`. Do not force empty sections, repeat the same conclusion under several headings, or translate every heading into two languages. Keep the prose concise, but never hide evidence gaps. Do not end at `YES`, `PARK`, or `NO` alone.
